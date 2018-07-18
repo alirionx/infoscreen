@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!---------------------------------------------------------------------------------------->
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="AISS - WebApps - Infoscreen Show" content="width=device-width, initial-scale=1.0">
+	
+	<title>AISS - WebApps - Infoscreen Show</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>		
+	
+	
+	<link rel="stylesheet" href="infoscreen_show.css">
+	
+	<script type="text/javascript" src="infoscreen_show.js"></script>
+	
+</head>
+
+
+<!---------------------------------------------------------------------------------------->
+	
+<body onload="infoscreen_show_call();">	
+	
+	<div class="media_target" id="media_target" onclick="media_control_toggle();" >
+	
+	</div>
+	
+	<div class="media_control_bg" id="media_control_bg"> </div>
+	<div class="media_control" id="media_control">
+		
+		<img src="../gfx/ico_prev_up.png" 						 onclick="slide_prev();"  onmouseover="this.src='../gfx/ico_prev_hover.png'"  onmouseout="this.src='../gfx/ico_prev_up.png'" />
+		<img src="../gfx/ico_play_up.png" 	id="slide_play_btn"  onclick="slide_play();"  onmouseover="this.src='../gfx/ico_play_hover.png'"  onmouseout="this.src='../gfx/ico_play_up.png'" />
+		<img src="../gfx/ico_pause_up.png"	id="slide_pause_btn" onclick="slide_pause();" onmouseover="this.src='../gfx/ico_pause_hover.png'" onmouseout="this.src='../gfx/ico_pause_up.png'" style="display:none;"  />
+		<img src="../gfx/ico_next_up.png"						 onclick="slide_next();"  onmouseover="this.src='../gfx/ico_next_hover.png'"  onmouseout="this.src='../gfx/ico_next_up.png'" />
+		
+		
+	</div>
+	
+</body>
+
+
+<!---------------------------------------------------------------------------------------->
+
+</html>
